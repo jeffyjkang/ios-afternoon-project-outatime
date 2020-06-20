@@ -20,8 +20,6 @@ class TimeCircuitsViewController: UIViewController {
     
     var currentSpeed: Int = 0
     
-//    var lastTimeDeparted = "--- -- ----"
-    
     var timer: Timer?
     
     var dateFormatter: DateFormatter {
@@ -37,7 +35,6 @@ class TimeCircuitsViewController: UIViewController {
         // Do any additional setup after loading the view.
         presentTimeLabel.text = dateFormatter.string(from: Date())
         speedLabel.text = "\(currentSpeed) MPH"
-//        lastTimeDepartedLabel.text = lastTimeDeparted
     }
     
     func startTimer() {
